@@ -1,0 +1,156 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Даниил Колеватых - Главная страница
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="content-grid">
+    <div class="grid-item-none-left"></div>
+
+    <div class="grid-item-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'main/img/preview.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="myshadow">ДАНИИЛ КОЛЕВАТЫХ</h5>
+                        <p class="myshadow">Начинающий FullStack-программист из Омска. Данный сайт является моей визитной карточкой.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'main/img/guitarist.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="myshadow">Гитарист</h5>
+                        <p class="myshadow">Я нужен вашему коллективу, сделаю всё в срок, досуг организую</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'main/img/gamer.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="myshadow">Геймер</h5>
+                        <p class="myshadow">Игры - хороший способ развлечься и провести время с друзьями, а также сплотить коллектив.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-item-none-right"></div>
+
+    <div class="container marketing">
+
+        <h1 class="featurette-heading fw-normal lh-1 hobby-title">Мои хобби и увлечения</h1>
+
+        <div class="row">
+
+            <div class="col-lg-3">
+                <img src="{% static 'main/img/my_guitar.jpg' %}" alt="" class="img140px">
+                <h2 class="fw-normal hobby-title"><u>Гитара</u></h2>
+                <p class="hobby-short-text">Уже на протяжении <span class="bg-text-green">8 лет</span> я занимаюсь гитарой, сначала классика, а теперь играю в стиле <span class="bg-text-green">"фингерстайл"</span>, а также пишу свои <span class="bg-text-green">каверы</span> на популярные произведения и песни (в том числе из фильмов или аниме).</p>
+            </div>
+
+            <div class="col-lg-3">
+                <img src="{% static 'main/img/aot.jpg' %}" alt="" class="img140px">
+                <h2 class="fw-normal hobby-title"><u>Аниме и манга</u></h2>
+                <p class="hobby-short-text">Мне нравится азиатская культура, поэтому в свободное время я люблю <span class="bg-text-green">отвлечься от проблем</span> и в уютной обстановке <span class="bg-text-green">почитать мангу</span> либо же <span class="bg-text-green">посмотреть аниме</span>.</p>
+            </div>
+
+            <div class="col-lg-3">
+                <img src="{% static 'main/img/games.jpg' %}" alt="" class="img140px">
+                <h2 class="fw-normal hobby-title"><u>Игры</u></h2>
+                <p class="hobby-short-text">Я люблю играть в игры, особенно со своими друзьями - это помогает мне <span class="bg-text-green">развлечься</span>, <span class="bg-text-green">пообщаться</span> и <span class="bg-text-green">провести время с ними</span> по вечерам, параллельно делая триплкилл на боте. </p>
+            </div>
+
+            <div class="col-lg-3">
+                <img src="{% static 'main/img/bike.jpg' %}" alt="" class="img140px">
+                <h2 class="fw-normal hobby-title"><u>Спорт</u></h2>
+                <p class="hobby-short-text">За свою жизнь я испробовал <span class="bg-text-green">множество видов спорта</span>: от каратэ до футбола, от баскетбола до велоспорта. В данный момент я <span class="bg-text-green">хожу в спортзал</span> и <span class="bg-text-green">езжу на велосипеде</span>, чтобы привести себя в форму!</p>
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider to-scroll" id="about">
+
+        <div class="row featurette">
+
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Обо мне | <span class="text-muted">Кто я такой?</span></h2>
+                <p class="lead">Всем привет! Меня зовут <span class="bg-text-blue">Колеватых Даниил</span>, мне <span class="bg-text-blue">16 лет</span> и я живу в <span class="bg-text-blue">Омске</span>.</p>
+                <p class="lead">Как было и описано выше моими увлечениями являются:</p>
+                <p class="lead">▪ 🎸 <b>гитара</b> - занимаюсь уже на протяжении <span class="bg-text-blue">8 лет</span>, сочиняю свои собственные аранжировки. Во время обучения в музыкальной школе я много участвовал в различных музыкальных конкурсах и на сегодняшний день у меня есть приличная коллекция наград: <span class="bg-text-blue">дипломы, медали, кубки</span>, а также я дважды стал <span class="bg-text-blue">стипендиатом Министерства культуры Омской области</span>.</p>
+                <p class="lead">▪ 📺 <b>просмотр аниме и прочтение манги</b> - начал увлекаться весной прошлого года; мои любимые произведения это: <span class="bg-text-blue">"Атака Титанов"</span>, <span class="bg-text-blue">"Твоё имя"</span>, <span class="bg-text-blue">"Вайолетт Эвергарден"</span>, <span class="bg-text-blue">"Госпожа Кагуя: в любви, как на войне"</span> и <span class="bg-text-blue">"Токийский гуль"</span>.</p>
+            </div>
+
+            <div class="col-md-5">
+                <img src="{% static 'main/img/WhoAmI.jpg' %}" alt="" class="img440px">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <p class="lead">▪ 🎮 <b>игры</b> - в них я играю с самого детства, первой любимой игрой стала <span class="bg-text-blue">"World of Tanks"</span>. Потом мой диапазон игр расширился и я стал любить такие жанры игр, как: шутеры, стратегии, RPG, командные сражения, а также приключения, детективы и игры с открытым миром. На данный момент любимыми играми являются - <span class="bg-text-blue">"League of Legends"</span> и <span class="bg-text-blue">"Genshin Impact"</span>.</p>
+                <p class="lead">▪ ⚽ <b>спорт</b> - сейчас записался в спортзал, чтобы <span class="bg-text-blue">привести себя в форму</span> и жить здоровой жизнью, хотя иногда можно и дать себе поблажку 😉.</p>
+            </div>
+
+            <div class="col-md-5 order-md-1">
+                <img src="{% static 'main/img/guitar_anime.jpg' %}" alt="" class="img440px">
+            </div>
+        </div>
+
+        <hr class="featurette-divider to-scroll" id="programming">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Опыт в программировании | <span class="text-muted">Моё рабочее место</span></h2>
+                <p class="lead">Увлекаться IT-сферой я <span class="bg-text-red">начал в 2019 году</span>, тогда я начал изучать основы языка <span class="bg-text-red">HTML</span> по учебнику в интернете и даже написал свой первый небольшой информационный сайт.</p>
+                <p class="lead"><span class="bg-text-red">В 2020 году</span> к нам в школу пришёл <span class="bg-text-red">представитель Яндекс.Лицея</span> и предложил записаться на курсы по программированию на языке <span class="bg-text-red">"Python"</span> - данное предложение меня очень сильно заинтересовало и я сразу же без раздумий подал заявку, пройдя вступительный тест и собеседование я получил ответ "ДА" - это стало моим <span class="bg-text-red">вторым шагом на пути к работе моей мечты</span>. <span class="bg-text-red">Было сложно</span>, но мне нравилось учиться и видеть, как все мои <span class="bg-text-red">труды перерастают в конечный продукт</span>!</p>
+                <p class="lead">Ко второму году обучения я <span class="bg-text-red">собрал новый компьютер</span>, на который летом заработал - это стало <span class="bg-text-red">следующим шагом на пути к цели</span>, ведь теперь кодить стало гораздо удобнее, быстрее и приятнее.</p>
+                <p class="lead">На втором курсе, параллельно с программой Яндекс.Лицея я <span class="bg-text-red">познал основы языка CSS</span> и <span class="bg-text-red">начал изучать JavaScript</span>, который учу до сих пор.</p>
+            </div>
+
+            <div class="col-md-5">
+                <img src="{% static 'main/img/myworktable.jpg' %}" alt="" class="img440px">
+            </div>
+        </div>
+
+        <hr class="featurette-divider to-scroll" id="contacts">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Контакты | <span class="text-muted">Как со мной связаться?</span></h2>
+                <p class="lead">Для сотрудничества можете писать мне:</p>
+                <p class="lead">▪ в <span class="bg-text-blue">Телеграмме</span> - <a href="https://t.me/daniil_danone" target="_blank">https://t.me/daniil_danone</a></p>
+                <p class="lead">▪ в <span class="bg-text-blue">ВКонтакте</span> - <a href="https://vk.com/daniilkolevatykh" target="_blank">https://vk.com/daniilkolevatykh</a></p>
+                <p class="lead">▪ на <span class="bg-text-yellow">Яндекс.Почту</span> - <a href="mailto:Danilka.Danone@yandex.ru" target="_blank">Danilka.Danone@yandex.ru</a></p>
+                <p class="lead">▪ на <span class="bg-text-yellow">Почту Mail.ru</span> - <a href="mailto:mr.super.ko@inbox.ru" target="_blank">mr.super.ko@inbox.ru</a></p>
+            </div>
+
+            <div class="col-md-5 order-md-1">
+                <img src="{% static 'main/img/contacts.jpg' %}" alt="" class="img440px">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+</div>
+{% endblock %}
